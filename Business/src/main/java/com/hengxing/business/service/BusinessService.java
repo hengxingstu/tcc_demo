@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
+ * 商城的服务类
  * @author hengxing
  * @version 1.0
  * @project at_demo

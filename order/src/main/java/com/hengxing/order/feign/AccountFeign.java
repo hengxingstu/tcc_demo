@@ -4,6 +4,7 @@ import com.hengxing.common.api.AccountApi;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**
+ * account远程调用接口
  * @author hengxing
  * @version 1.0
  * @project at_demo

@@ -4,6 +4,7 @@ import com.hengxing.common.api.OrderApi;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**
+ * 订单远程调用
  * @author hengxing
  * @version 1.0
  * @project at_demo
@@ -11,6 +12,5 @@ import org.springframework.cloud.openfeign.FeignClient;
  */
 @FeignClient("order")
 public interface OrderFeign extends OrderApi {
-//    @PostMapping("order/create")
-//    ResponseBean createOrder(@RequestParam("username") String username, @RequestParam("pid") Integer pid, @RequestParam("count") Integer count);
+
 }

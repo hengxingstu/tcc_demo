@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
+ * 订单服务类实现
  * @author hengxing
  * @version 1.0
  * @project at_demo
@@ -21,19 +22,6 @@ public class OrderService {
     OrderMapper orderMapper;
     @Autowired
     AccountFeign accountFeign;
-
-//    public ResponseBean createOrder(BusinessActionContext context,String username, Integer pid, Integer count) {
-//        ResponseBean response = accountFeign.deduct(context,username, count * 100.0);
-//        if (200 == response.getStatus()) {
-//            //创建订单
-//            int result = orderMapper.createOrder(username, pid, count, count * 100.0);
-//            return result == 1 ?
-//                    ResponseBean.OK("订单创建成功。") :
-//                    ResponseBean.ERROR("订单创建失败。");
-//        }
-//        return response;
-//
-//    }
 
     /**
      * 下订单一共两步：1. 扣款 2. 添加订单

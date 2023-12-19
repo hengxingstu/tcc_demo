@@ -4,6 +4,7 @@ import com.hengxing.common.api.StockApi;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**
+ * 库存接口远程调用
  * @author hengxing
  * @version 1.0
  * @project at_demo
@@ -12,6 +13,4 @@ import org.springframework.cloud.openfeign.FeignClient;
 @FeignClient("stock")
 public interface StockFeign extends StockApi {
 
-//    @PostMapping("stock/deduct")
-//    ResponseBean deductStock(@RequestParam("pid") Integer pid, @RequestParam("count") Integer count);
 }

@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * account控制层，实现远程api接口
  * @author hengxing
  * @version 1.0
- * @project at_demo
+ * @project tcc_demo
  * @date 12/10/2023 14:46:46
  */
 @RestController

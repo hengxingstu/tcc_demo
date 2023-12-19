@@ -74,8 +74,8 @@ public class AccountService {
         Double money = ((BigDecimal) context.getActionContext("money")).doubleValue();
         Account account = accountMapper.selectOne(new LambdaQueryWrapper<Account>().eq(Account::getUsername, username));
         if (account.getFreezeMoney() < money) {
-            LOGGER.error("余额不足，扣库存回滚失败");
-            return false;
+            LOGGER.error("账户余额不足，但无需回滚余额。");
+            return true;
         }
         account.setFreezeMoney(account.getFreezeMoney() - money);
         account.setMoney(account.getFreezeMoney() + money);

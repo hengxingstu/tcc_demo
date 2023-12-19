@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Objects;
 
 /**
+ * 库存服务
  * @author hengxing
  * @version 1.0
  * @project at_demo

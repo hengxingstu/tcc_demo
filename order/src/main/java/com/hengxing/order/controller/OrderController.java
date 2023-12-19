@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * order控制层代码
  * @author hengxing
  * @version 1.0
  * @project at_demo
@@ -17,11 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController implements OrderApi {
     @Autowired
     OrderService orderService;
-
-//    @PostMapping("order/create")
-//    public ResponseBean createOrder(String username, Integer pid, Integer count){
-//        return orderService.createOrder(username, pid, count);
-//    }
 
     @Override
     @PostMapping("order/create")
