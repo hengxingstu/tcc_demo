@@ -3,6 +3,7 @@ package com.hengxing.common.api;
 import io.seata.rm.tcc.api.BusinessActionContext;
 import io.seata.rm.tcc.api.BusinessActionContextParameter;
 import io.seata.rm.tcc.api.LocalTCC;
+import io.seata.rm.tcc.api.TwoPhaseBusinessAction;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface OrderApi {
 
     @PostMapping("order/create")
+    @TwoPhaseBusinessAction(name = "orderApi")
     boolean createOrder(
             @RequestBody BusinessActionContext context,
             @RequestParam("username")
