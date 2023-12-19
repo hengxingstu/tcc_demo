@@ -1,0 +1,7 @@
+# Project exclude paths
+/account/target/
+/Business/target/
+/common/target/
+/eureka/target/
+/order/target/
+/stock/target/
